@@ -1,5 +1,958 @@
 /*
-    Theme Name: MeCO Website Theme
-    Author: MISA
-    Description: MeCO Website Theme
+Theme Name: onetone-child
+Version: 1.0
+Description: A child theme of Onetone
+Template: onetone
 */
+
+@import url("../onetone/style.css");
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text);
+
+@import url ("fonts/cooper-hewitt/CooperHewitt-Semibold.otf");
+
+@font-face {
+    font-family: CH;
+    src: url(fonts/cooper-hewitt/CooperHewitt-Semibold.otf);
+}
+
+.col-main {
+background-attachment:fixed;
+}
+
+div.main-header{
+	background-color: rgba(255,255,255,0.4)!important;
+	/*rgba(0,29,48,1);#001a33*/
+	/*border-bottom: solid rgba(255,255,255,0.1);*/
+	/*border-width: 2px;*/
+	position: fixed;
+	/*border-bottom: 1px solid rgba(230, 230, 230, 0.5);*/
+}
+
+div.main-header a{
+/*
+	font-family: 'Source Sans Pro';
+	font-weight: light;
+*/
+	/* Nav Bar MAIN */
+	font-family: CH!important;
+	font-weight: 500;
+	color: #808080!important;
+}
+
+.fxd-header {
+	background-color: rgba(255,255,255,0.4)!important;
+}
+
+div.fxd-header a{
+/*
+	font-family: 'Source Sans Pro';
+	font-weight: light;
+*/
+}
+
+div.item{
+	height: 100vh;
+}
+
+div.inner h1{
+	font-size: 48px;
+	margin-top: 17vh;
+	margin-bottom: 8vh;
+	line-height:1;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-style: normal;
+	font-weight: 600;
+}
+
+div.inner h4{
+	font-family: 'Source Sans Pro';
+	font-size: 18px;
+	line-height:1;
+}
+
+.sub-menu {
+	background-color: rgba(0, 0, 0,0)!important;
+
+
+}
+
+
+#menu-item-303, #menu-item-707 {
+	width: 210px!important;
+}
+
+
+.sub-menu li{
+	width: 130%;
+	/* text-align: center; */
+	float: left!important;
+}
+
+.sub-menu li a{
+	background-color: rgba(255, 255, 255, 0.3);
+	color: rgb(22,22,22)!important;
+	padding-right: 1px;
+	font-weight: normal;
+}
+
+.sub-menu li a:hover{
+	color: rgb(189, 27, 34)!important;
+}
+
+.sub-menu li a span{
+	font-size: 13px;
+}
+
+/* SUB MENU */
+
+.sub-menu .menu-item {
+	background-color: rgba(246,246,246,.9)!important;
+}
+
+.sub-menu .menu-item a:hover{
+	color: rgb(189, 27, 34)!important;
+	background-color: rgba(217, 217, 217,.9);
+
+}
+
+.menu-image-title-after:hover {
+	color: rgb(189, 27, 34)!important;
+}
+
+.menu-item < .sub-menu .menu-item a:hover{
+	background-color: white!important;
+}
+
+.menu-item-28, .menu-item-38, .menu-item-30, .menu-item-13{
+	margin-right: 4vw;
+}
+
+/* NAV BAR BACKGROUND */
+
+.site-nav > ul {
+	background-color: rgba(255,255,255,0.9)!Important;
+}
+
+
+.site-nav > ul > li:hover > a {
+	color:  rgb(189, 27, 34)!important;
+}
+
+.menu-item a:hover {
+	color: rgb(189, 27, 34)!important;
+}
+
+.footer {
+	width: 100%;
+	clear: both;
+	position: relative;
+	margin-top: 40em;
+	position: absolute;
+	bottom: 0;
+	clear: both;
+	height: 5px;
+	
+}
+
+.site-info {
+	padding-left: 10%;
+}
+
+#menu-main {
+	width: 100vw;
+	padding-left: 8vw;
+	padding-right: 8vw;
+
+	
+}
+
+.menu-item {
+	float: right!important;
+	
+}
+
+.menu-item:hover {
+	color: rgb(189, 27, 34)!important;	
+}
+
+.bull_logo {
+	float: left!important;
+}
+
+.bull_logo img {
+	height: 64px!important;
+	width: 64px!important;
+}
+
+.footer-widget-area{
+	display: none;
+}
+
+#footer-icons-container {
+	float: right;
+	padding-right: 60px;
+	position: relative;
+	bottom: 6px;
+}
+
+.footer-icons img {
+	height: 25px;
+	width: 25px;
+	margin-right: 14px;
+	display: inline;
+}
+
+
+.container {
+	padding: 0px;
+	margin: 0px 0px 0px 0px;
+	width: 100%;
+}
+
+.menu-image-title {
+	/*Primary nav bar color */
+	/*CHANGE HERE */
+	color: #808080;
+	
+	color: black;
+
+}
+
+.menu-image-title:hover {
+	color: rgb(189, 27, 34)!important;
+
+}
+
+.main-nav {
+	/* Nav Bar */
+	font-family: CH!important;
+	font-weight: 500;
+	color: #b9b9b9!important;
+
+}
+
+
+.main-nav li a:hover, ::selection {
+	color: red!important;
+	
+}
+
+.main-nav li {
+	color: rgba(22,22,22,0.8);
+	margin-right: 1.5vw;
+}
+
+.site-nav {
+	width: 100%;
+}
+
+.site-nav > ul > li + li {
+    margin-left: 0px!important;
+}
+
+
+/* ============= CAROUSEL ============= */
+/*
+*/
+
+#newsletterListLayer img{
+	margin: auto;
+    	display: block;
+	height: 40vh;
+	width: 25vw;
+	object-fit: cover;
+           
+
+}
+
+#newsletterListInfo,#newsletterListTitle{
+
+    text-transform: uppercase;
+}
+
+/* ============= ARTICLE ============= */
+.newsletterPostTitle h3{
+	font-family: CH, sans-serif !important;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 3em;
+	text-transform: uppercase;
+	color: rgb(176, 44, 40);
+
+}
+
+.contentDetails{
+	font-family: 'Source Sans Pro';
+	font-size: 12px;
+	color: gray;
+}
+
+.mainContent p{
+	font-family: 'Source Sans Pro';
+	font-size: 14px;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+
+
+.page-title-bar {
+	display: none;
+}
+
+/* --------------------------------------------------------------- */
+/*      OCTOBER 1 BACK UP FROM TIF     */
+/* --------------------------------------------------------------- */
+
+/* --------------------------------------------------------------- */
+/*      M E M B E R ' S    &    N E W S L E T T E R    P A G E     */
+/* --------------------------------------------------------------- */
+.memberTextDiv {
+	height: 35vh;
+}
+.newsletterTextDiv {
+	height: 30vh;
+	/*max-height: 30vh;*/
+	padding: 0 20px 20px 20px;
+	font-size: 12px;
+	text-decoration: none;
+}
+.memberTextDiv, .newsletterTextDiv {
+	position: relative;
+	background-color: transparent;
+
+	color: rgb(7, 41, 59);
+        font-size: 14px;
+
+	text-align: justify;
+	transition: all 0.5s ease-in-out;
+}
+.memberTextDiv:hover, .newsletterTextDiv:hover {
+	background-color: rgba(0, 34, 51, 1);
+}
+.memberTextDiv:hover #title, .memberTextDiv:hover, .newsletterTextDiv:hover #title, .newsletterTextDiv:hover {
+	color: #ffffff;
+}
+#memberTitle, #newsletterTitle {
+	color: rgb(189, 27, 34);
+	transition: all 0.5s ease-in-out;
+}
+#newsletterTitle {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.memberImageDiv {
+	height:35vh;
+}
+.memberImageDiv, .newsletterImageDiv {
+	background-position: center;
+	position: relative;
+}
+#memberImageDiv1 {
+	/* insert background photo */
+	background-image: url('bg.jpg');
+}
+#memberImageDiv2 {
+	/* insert background photo */
+	background-image: url('bg.jpg');
+}
+.newsletterImageDiv {
+	height: auto;
+	margin-bottom: 0px!important;
+}
+#newsletterImageDiv1 {
+	/* insert background photo */
+	background-image: url('bg.jpg');
+}
+#newsletterImageDiv2 {
+	/* insert background photo */
+	background-image: url('bg.jpg');
+}
+#newsletterImageDiv3 {
+	/* insert background photo */
+	background-image: url('bg.jpg');
+}
+#memberTextDiv1:after, #memberTextDiv2:after, #newsletterTextDiv1:after, #newsletterTextDiv2:after, #newsletterTextDiv3:after {
+	border: solid transparent;
+	content: " "; 
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	transition: border 0.5s ease-in-out;
+	z-index: 1;
+}
+#memberTextDiv1:after, #memberTextDiv2:after {
+	top: 50%;
+	margin-top: -30px;
+}
+#newsletterTextDiv1:after, #newsletterTextDiv2:after, #newsletterTextDiv3:after {
+	left: 50%;
+	margin-left: -20px;
+}
+#memberTextDiv1:after {
+	border-right-color: rgba(7, 41, 59, 1);
+	right: 100%;
+	border-width: 20px 45px 20px 0;
+}
+#memberTextDiv2:after {
+	border-left-color: rgba(7, 41, 59, 1);
+	left: 100%;
+	border-width: 20px 0 20px 45px;
+}
+#newsletterTextDiv1:after {
+	border-bottom-color: rgba(7, 41, 59, 1);
+	bottom: 100%;
+	border-width: 0px 20px 30px 20px;
+}
+#newsletterTextDiv2:after {
+	border-top-color: rgba(7, 41, 59, 1);
+	top: 100%;
+	border-width: 30px 20px 0px 20px;
+}
+#newsletterTextDiv3:after {
+	border-bottom-color: rgba(7, 41, 59, 1);
+	bottom: 100%;
+	border-width: 0px 20px 30px 20px;
+}
+#memberTextDiv1:after:hover, #memberTextDiv2:after:hover, #newsletterTextDiv1:after:hover, #newsletterTextDiv2:after:hover, #newsletterTextDiv3:hover {
+	transition: border 0.5s ease-in-out;
+}
+#memberTextDiv1:hover:after {
+	border-right-color: transparent;
+}
+#memberTextDiv2:hover:after {
+	border-left-color: transparent;
+}
+#newsletterTextDiv1:hover:after {
+	border-bottom-color: transparent;
+}
+#newsletterTextDiv2:hover:after {
+	border-top-color: transparent;
+}
+#newsletterTextDiv3:hover:after {
+	border-bottom-color: transparent;
+}
+.newsletterDiv {
+	float: none;
+    margin-left: 20vw;
+	padding-left:0;
+	padding-right:0;
+	position: relative;
+}
+.memberBody, .newsletterBody {
+	/* font - family */
+}
+.newsletterLayer {
+	height: 40vh;
+}
+.memberLayer {
+	height:35vh;
+	padding: 0;
+	margin: 0 -15px 0 -15px;
+}
+.memberBody {
+	max-height: 25vh;
+}
+.newsletterBody {
+	max-height: 20vh;
+}
+/* -------------------------------------------------------------- */
+/*    S T U D E N T    S U P P O R T    S Y S T E M    P A G E    */
+/* -------------------------------------------------------------- */
+#sssTitle {
+	padding-bottom: 8px;
+	color: rgb(7, 41, 59);
+}
+#sssTitle, #majorSubjectsTitle, .listOfSubjects {
+	font-family: CH, sans-serif;
+}
+#majorSubjectsTitle {
+	padding: 10px 0px 10px 0px;
+	background-color: rgb(7, 41, 59);
+	width: 40vh;
+	text-align: center;
+	color: #ffffff;
+}
+.listOfSubjects {
+	padding-left: 10vw;
+	list-style: none;
+}
+.listOfSubjects a:hover {
+	color: rgb(197, 26, 34);
+}
+.lineDiv {
+	width: 15vw;
+	height: 8px;
+	margin: -10px 0 -5px 0;
+	background-color: rgb(165, 22, 28);
+}
+.sssDiv {
+	margin-left: 5vw;
+}
+/* -------------------------------------------------------------- */
+/*              R E N T  -  A  -  T E N T    P A G E              */
+/* -------------------------------------------------------------- */
+#rentTagLine {
+	width: 75%;
+	color: rgb(205, 26, 32);
+	font-size: 35px;
+	letter-spacing: -0.5px;
+}
+#rentTagLine, .leaveMessageButton {
+	font-family: 'Oswald', sans-serif;
+}
+.leaveMessageButton {
+	padding: 5px 15px 5px 15px;
+	background-color: rgb(7, 41, 59);
+	color: #ffffff;
+	border: none;
+	letter-spacing: 1.5px;
+}
+.formInput, .leaveMessageButton {
+	margin-bottom: 10px;
+}
+.formInput {
+	max-width: 60%;
+}
+.formInput, .formTextArea {
+	background-color: rgb(226, 228, 229);
+	font-family: 'Verdana';
+	font-size: 10px;
+}
+.formTextArea {
+	max-width: 85%;
+}
+.rentImageDiv {
+	background-image: url('rent-a-tent.jpg');
+	background-position: center;
+	height: 75vh;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+}
+.rentFormDiv {
+	margin-top: 50px;
+}
+/* -------------------------------------------------------------- */
+/*                 N E W S L E T T E R     L I S T                */
+/* -------------------------------------------------------------- */
+.newsletterListDiv {
+	/*height: 30vh;*/
+	transition: all 0.5s ease-in-out;
+
+}
+.newsletterListTextDiv {
+	text-align: center;
+	padding: 10px 20px 10px 20px;
+}
+#newsletterListDiv1:hover *, #newsletterListDiv2:hover *, #newsletterListDiv3:hover *{
+	color: #ffffff !important;
+}
+
+#newsletterListInfo {
+	color: rgb(8, 37, 56);
+}
+#division {
+	color: rgb(176, 44, 40);
+}
+#newsletterListTitle {
+	font-size: 30px;
+	color: rgb(176, 44, 40);
+	margin: -10px 0 -10px 0;
+}
+#newsletterListInfo, #division, #newsletterListTitle {
+	font-family: CH, sans-serif;
+	position: relative;
+}
+.newsletterListBody {
+	position: relative;
+	margin: auto;
+	color: rgb(8, 37, 56);
+	width: 45vw;
+}
+.newsletterListDiv:hover {
+	background-color: rgb(7, 41, 59);
+	color: #ffffff;
+}
+.newsletterListImageDiv {
+	background-position: center;
+	position: relative;
+	margin-top: 35px;
+	padding: 0px -10px 0px -10px;
+	overflow: hidden;
+	height: 40vh;
+	margin-bottom: 0px!important;
+	
+}
+#newsletterListImageDiv1 {
+	/* Insert Photo */
+	max-width: 25vw;
+	height: 40vh;
+	margin: auto;
+	background-image: url('member-bg1.jpg');
+	margin-bottom: 0px;
+}
+#newsletterListImageDiv2 {
+	/* Insert Photo */
+	max-width: 25vw;
+	height: 20vh;
+	margin: auto;
+	background-image: url('member-bg1.jpg');
+}
+#newsletterListImageDiv3 {
+	/* Insert Photo */
+	max-width: 25vw;
+	height: 20vh;
+	margin: auto;
+	background-image: url('member-bg1.jpg');
+}
+#newsletterListLayer {
+	max-width: 25vw;
+	height: 100%;
+}
+/* -------------------------------------------------------------- */
+/*                   F O R    A L L    P A G E S                  */
+/* -------------------------------------------------------------- */
+#mainDiv {
+	min-height: 100vh;
+	background-color: #ECECEC;
+	padding-top:14vh;
+
+}
+a, a:hover, a:visited, a:active {
+	text-decoration: none !important;
+}
+/*#newsletterTextDiv2:hover + #newsletterImageDiv2 {
+	opacity:0.9;
+	background:#FFFFFF;
+	width:320px;
+	height:240px;
+}*/
+/*.newsletterColumn:nth-child(1) #newsletterImageDiv2 {
+    background: blue;
+}*/
+/*#newsletterTextDiv2.hoverOne {
+	opacity:0.9;
+	background:#FFFFFF;
+	width:320px;
+	height:240px;
+}*/
+/*#newsletterTextDiv2:hover ~ #newletterImageDiv2 {
+    background-color: black;
+    color: white;
+}*/
+
+/* -------------------------------------------------------------- */
+/*                I N C E N T I V E    S Y S T E M                */
+/* -------------------------------------------------------------- */
+
+#incentiveHeader {
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: -10px;
+}
+
+#incentiveHeaderDesc {
+	margin-bottom: 20px;
+	color: rgb(128, 129, 131);
+}
+
+.formInput {
+	height: 45px;
+	font-size: 15px;
+}
+
+#studentInfo {
+	text-align: left;
+	font-size: 20px;
+	font-weight: 900;
+	letter-spacing: -1px;
+}
+
+#incentiveSubhead {
+	font-size: 18px;
+	margin: 20px 0 -10px 0;
+	font-weight: 900;
+}
+
+#incentiveSubDesc {
+	font-size: 13px;
+	margin: -10px 0 -20px 0;
+	letter-spacing: 1px;
+}
+
+#listInfo {
+	color: rgb(128, 129, 131);
+	/*text-align: justify;*/
+	padding-left: 2em;
+	text-indent: -2em;
+}
+
+.verticalLine {
+	border-right: 4px solid black;
+	height: 80vh;
+	float: right;
+	margin: 0 0 0 0;
+	border-color: rgb(7, 40, 59);
+}
+
+ul.incentiveUL, ul.circlesUL {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+ul.circlesUL {
+	display: inline;
+	padding-left: 0px;
+	list-style-position: inside;
+}
+
+ul.circlesUL li {
+	float: left;
+	margin: 5px;
+}
+
+li.red, li.white, li.blue, li.default { 
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px;
+  font-weight: 900;
+  text-transform: uppercase;
+  /*letter-spacing: 2px;*/
+}
+
+li.red {
+	color: rgb(119, 4, 9);
+}
+
+li.white {
+	color: rgb(94, 96, 95);
+}
+
+li.blue {
+	color: rgb(45, 109, 151);
+}
+
+li.default {
+	color: rgb(6, 29, 43);
+}
+
+li.red:before, li.white:before, li.blue:before, li.default:before, li.indentList:before {
+  content: "";
+  margin: 1px 10px 1px 0;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+li.red:before {
+	background-color: rgb(119, 4, 9);
+}
+
+li.white:before {
+	background-color: rgb(94, 96, 95);
+}
+
+li.blue:before {
+	background-color: rgb(45, 109, 151);
+}
+
+li.default:before {
+	background-color: rgb(6, 29, 43);
+}
+
+li.indentList:before {
+  background-color: #ffffff;
+}
+
+li.indentList {
+	font-family: Arial;
+	font-weight: lighter;
+	letter-spacing: 1px;
+	padding-top: -10px;
+	margin-top: -3px;
+	font-size: 12px;
+}
+
+.circle {
+	margin-top: 10px;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px; 
+	box-shadow: 0 0 4px gray;
+	text-align: center;
+    vertical-align: middle;
+}
+
+.redCircle {
+	background-color: rgb(119, 4, 9);
+}
+
+.whiteCircle {
+	background-color: rgb(94, 96, 95);
+}
+
+.blueCircle {
+	background-color: rgb(45, 109, 151);
+}
+
+#circleText {
+	padding-top: 5px;
+	font-weight: 900;
+	color: #ffffff;
+}
+
+ul.circlesUL .indentCircle {
+	margin-left: 20px;
+}
+
+.indentList #circleText {
+	padding-top: 7px !important;
+}
+
+/* Additionals - Ferny   */
+/* For extending footer 
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+}
+.row:after {
+    clear: both !important;
+} 
+*/
+.footer-info-area .container {
+	height: 0;
+}
+
+.footer-info-area {
+	background: none;
+	padding: 0px;
+}
+
+.site-info, .pull-left {
+	background: black;
+	width: 100%;
+	height: 10vh;
+	padding: 3vh 0px 0px 10vh;
+	position: relative;
+	
+}
+
+#footer-container {
+	position: relative;
+	width: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+
+/* -------------------------------------------------------------- */
+/*                 ROTATING TWEETS		                  */
+/* -------------------------------------------------------------- */
+
+.rtw_main, .rtw_time_short a, .rtw_name a, rtw_id a {
+	color: white;
+}
+
+
+/* -------------------------------------------------------------- */
+/*                 SINGLE POST   		                  */
+/* -------------------------------------------------------------- */
+.single {
+	height: 100%!important;
+}
+
+.single_post {
+	padding: 60px 70px 40px 70px!important;
+
+	height: auto!important;
+}
+
+/* CHANGE FONT SIZE OF ARTICLE BODY HERE (START) */
+
+.single_post_content {
+	text-indent: 50px;
+	font-family: 'Raleway';
+	clear: both;
+	
+	/* THIS */
+	font-size: 22px; 
+}
+
+.single_post_content p {
+	/* AND THIS */
+	font-size: 22px; 
+}
+
+
+/* CHANGE FONT SIZE OF ARTICLE BODY HERE (END) */
+
+#single_post_img {
+	height: auto;
+	width: 30%;
+	float: right;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 5px 20px;
+}
+
+#single_post_img img {
+	float: left;
+
+}
+
+
+/* ------------------- */
+
+.tags p a {
+	color: rgb(8,37,56)!important;
+	pointer-events: none;
+  	cursor: default;
+}
+
+#upload-blog-area {
+	min-height: 1px;
+	overflow: hidden;
+	width: 100%;
+}
+
+#upload-blog-description {
+	display: inline-block;
+	text-indent: 20px;
+}
+
+#upload-blog-button{
+	float: right;
+	display: inline-block;
+	margin-right: 30px;
+}
+
+#wordpress_file_upload_title_1 {
+	display: none;
+}
+
+#bs-padding-top-less {
+overflow-x: hidden;
+}
+
+/* SSS */
+
+
+.flip-entry-last-writer {
+display:none!important;
+}
+
+
+
+
+
+/* -------------------------------------------------------------- */
+/*                 END		                  */
+/* -------------------------------------------------------------- */
